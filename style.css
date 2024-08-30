@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    list-style: none;
+    background: #8c52ff;
+}
+ul li{
+    position: relative;
+    display: inline-block;
+}
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown{
+    position: absolute;
+    width: 100%;
+    background: #8c52ff;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover{
+    background: #6d30e9;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
